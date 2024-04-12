@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balbindar Dance Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <script src="https://kit.fontawesome.com/f93074ea26.js" crossorigin="anonymous"></script>
+    <style>
+        /* Additional CSS for responsive slideshow */
+        .slide-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 430px) {
+            .slide-frame {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get the "About" navigation link
+                const aboutNavLink = document.querySelector('a[href="#about-section"]');
+        
+                // Add click event listener to the "About" navigation link
+                if (aboutNavLink) {
+                    aboutNavLink.addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent default anchor behavior
+        
+                        // Get the target section element (about section)
+                        const aboutSection = document.getElementById('about-section');
+        
+                        // Scroll to the about section with smooth behavior
+                        if (aboutSection) {
+                            aboutSection.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start' // Scroll to the top of the section
+                            });
+                        }
+                    });
+                }
+            });
+        </script>
+        
+        
+        
+        
+        
+        
+    
+</head>
+<body>
+<header>
+    <div class="logo">
+        <br><br>
+        <img src="facebook-icon-white-png.png" alt="Logo 1">
+        <i class="fa-brands fa-instagram"></i>
+        <img src="youtubewhite.png" alt="Logo 3">
+        <br><br><br>
+    </div>
+    <h1>Balbindar Dance Studio</h1>
+    <br>
+    <h5>Ph No: 8011850029</h5>
+</header>
+
+<nav>
+    <br>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Auto Image Slideshow -->
+<div class="sliding-page">
+    <div class="slide-frame">
+        <div class="slide-img">
+            <div class="Img-container">s
+                <img src="earth.jpg" alt="">
+            </div>
+            <div class="Img-container">
+                <img src="earth2676554.jpg" alt="">
+            </div>
+            <div class="Img-container">
+                <img src="image2.jpg" alt="">
+            </div>
+            <div class="Img-container">
+                <img src="balbindar receiving prize 2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="about-section" class="about-section">
+    <h2>About Us</h2>
+    <p class="about">
+
+          Balbindar Singh Dance studio is the one of the top dance academy in lumding. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deleniti possimus officiis odit ut esse excepturi recusandae, earum fugit  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dignissimos reprehenderit officiis, reiciendis error neque cumque repellendus expedita illum quidem, alias omnis minima maiores! Architecto exercitationem officia odit totam debitis vero minima perferendis ipsa eius quae, aperiam nesciunt, adipisci magni cupiditate eveniet facere consequatur repudiandae eos fugit. Non, eligendi impedit.
+
+
+
+
+
+
+    </p>
+</section>
+
+
+<section class="join-form">
+    <h2>Join Our Academy</h2>
+    <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Dancers Academy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
