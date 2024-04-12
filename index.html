@@ -46,6 +46,80 @@
                 }
             });
         </script>
+         <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get the "Gallery" navigation link
+                const galleryNavLink = document.querySelector('a[href="#gallery"]');
+        
+                // Add click event listener to the "gallery" navigation link
+                if (galleryNavLink) {
+                    galleryNavLink.addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent default anchor behavior
+        
+                        // Get the target section element (about section)
+                        const gallery = document.getElementById('gallery');
+        
+                        // Scroll to the gallery with smooth behavior
+                        if (gallery) {
+                            gallery.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start' // Scroll to the top of the section
+                            });
+                        }
+                    });
+                }
+            });
+        </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the "watch" navigation link
+        const watchNavLink = document.querySelector('a[href="#watch"]');
+
+        // Add click event listener to the "watch" navigation link
+        if (watchNavLink) {
+            watchNavLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+
+                // Get the target section element (watch)
+                const watch = document.getElementById('watch');
+
+                // Scroll to the watch with smooth behavior
+                if (watch) {
+                    watch.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start' // Scroll to the top of the section
+                    });
+                }
+            });
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the "contact" navigation link
+        const contactNavLink = document.querySelector('a[href="#contact"]');
+
+        // Add click event listener to the "contact" navigation link
+        if (contactNavLink) {
+            contactNavLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+
+                // Get the target section element (contact)
+                const contact = document.getElementById('contact');
+
+                // Scroll to the watch with smooth behavior
+                if (contact) {
+                    contact.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start' // Scroll to the top of the section
+                    });
+                }
+            });
+        }
+    });
+</script>
         
         
         
@@ -58,13 +132,15 @@
 <header>
     <div class="logo">
         <br><br>
-        <img src="facebook-icon-white-png.png" alt="Logo 1">
-        <i class="fa-brands fa-instagram"></i>
-        <img src="youtubewhite.png" alt="Logo 3">
-        <br><br><br>
+       <a href="https://www.facebook.com/Cutestar01"> <img src="facebook-icon-white-png.png" alt="Logo 1">
+        <!-- <i class="fa-brands fa-instagram"></i> </a> -->
+
+        <a href="https://www.instagram.com/crazy_cutestar?igsh=MXNqeG44dWxlaXAwMg%3D%3D"> <img src="pngwing.com.png" alt="Logo 1">
+        <a href="https://www.youtube.com/@Cutestar01/featured"> <img src="youtubewhite.png" alt="Logo 3"></a>
+        <br><br>
     </div>
     <h1>Balbindar Dance Studio</h1>
-    <br>
+    <br> <br>
     <h5>Ph No: 8011850029</h5>
 </header>
 
@@ -74,6 +150,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about-section">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#watch">Watch</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -82,7 +159,7 @@
 <div class="sliding-page">
     <div class="slide-frame">
         <div class="slide-img">
-            <div class="Img-container">s
+            <div class="Img-container">
                 <img src="earth.jpg" alt="">
             </div>
             <div class="Img-container">
@@ -113,10 +190,38 @@
     </p>
 </section>
 
+<section id="gallery" class="gallery">
+    <h2> Gallery </h2>
+    <p class="gallery">
 
-<section class="join-form">
+          Balbindar Singh Dance studio is the one of the top dance academy in lumding. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deleniti possimus officiis odit ut esse excepturi recusandae, earum fugit  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dignissimos reprehenderit officiis, reiciendis error neque cumque repellendus expedita illum quidem, alias omnis minima maiores! Architecto exercitationem officia odit totam debitis vero minima perferendis ipsa eius quae, aperiam nesciunt, adipisci magni cupiditate eveniet facere consequatur repudiandae eos fugit. Non, eligendi impedit.
+
+
+
+
+
+
+    </p>
+</section>
+
+<section id="watch" class="watch">
+    <h2> watch </h2>
+    <p class="watch">
+
+          Balbindar Singh Dance studio is the one of the top dance academy in lumding. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deleniti possimus officiis odit ut esse excepturi recusandae, earum fugit  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas dignissimos reprehenderit officiis, reiciendis error neque cumque repellendus expedita illum quidem, alias omnis minima maiores! Architecto exercitationem officia odit totam debitis vero minima perferendis ipsa eius quae, aperiam nesciunt, adipisci magni cupiditate eveniet facere consequatur repudiandae eos fugit. Non, eligendi impedit.
+
+
+
+
+
+
+    </p>
+</section>
+
+
+<section id="contact" class="join-form">
     <h2>Join Our Academy</h2>
-    <form action="#" method="POST">
+    <form class="contact" action="#" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label>
